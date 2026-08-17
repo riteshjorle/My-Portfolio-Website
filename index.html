@@ -61,6 +61,39 @@
     background: #000;
     color: white;
 }
+       .profiles-section {
+    text-align: center;
+}
+
+.social-profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.profile-box {
+    width: 350px;
+    text-align: center;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.github-btn:hover {
+    background-color: #000;
+    color: white;
+}
      </style>
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
@@ -134,12 +167,16 @@
         </div>
       </section>
 
-  <section style="text-align: center;">
+  <section class="profiles-section">
+
     <h2>Visit My Profiles</h2>
+
     <div class="social-profiles">
-        <!-- LinkedIn -->
-        <div>
+
+        <!-- LEFT : LinkedIn -->
+        <div class="profile-box">
             <h3>LinkedIn</h3>
+
             <div class="badge-base LI-profile-badge"
                  data-locale="en_US"
                  data-size="medium"
@@ -152,20 +189,27 @@
                    href="https://in.linkedin.com/in/ritesh-jorle-9b34a5427?trk=profile-badge">
                     Ritesh Jorle
                 </a>
+
             </div>
         </div>
-        <!-- GitHub -->
-        <div>
+
+
+        <!-- RIGHT : GitHub -->
+        <div class="profile-box">
             <h3>GitHub</h3>
+
             <a href="https://github.com/riteshjorle"
                target="_blank"
                class="github-btn">
-                <i class="bi bi-github"></i> Ritesh Jorle
+                <i class="bi bi-github"></i>
+                Ritesh Jorle
             </a>
-        </div>
-    </div>
-</section>
 
+        </div>
+
+    </div>
+
+</section>
       <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
