@@ -45,6 +45,22 @@
     display: flex;
     justify-content: center;
   }
+       .github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.github-btn:hover {
+    background: #000;
+    color: white;
+}
      </style>
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
@@ -118,11 +134,33 @@
         </div>
       </section>
 
-    <section>
-                 <!-- Linkedin Badge --> 
-                  <h2>Visit My Linkedin Profile</h2>
-                  <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="ritesh-jorle-9b34a5427" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/ritesh-jorle-9b34a5427?trk=profile-badge">Ritesh Jorle</a></div>
-    </section>
+   <section style="text-align: center;">
+
+    <!-- LinkedIn Badge -->
+    <h2>Visit My LinkedIn Profile</h2>
+
+    <div class="badge-base LI-profile-badge"
+         data-locale="en_US"
+         data-size="medium"
+         data-theme="dark"
+         data-type="HORIZONTAL"
+         data-vanity="ritesh-jorle-9b34a5427"
+         data-version="v1">
+
+        <a class="badge-base__link LI-simple-link"
+           href="https://in.linkedin.com/in/ritesh-jorle-9b34a5427?trk=profile-badge">
+        </a>
+    </div>
+    <!-- GitHub -->
+    <h2 style="margin-top: 30px;">Visit My GitHub Profile</h2>
+
+    <a href="https://github.com/riteshjorle"
+       target="_blank"
+       class="github-btn">
+        <i class="bi bi-github"></i> Ritesh Jorle
+    </a>
+
+</section>
 
       <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
