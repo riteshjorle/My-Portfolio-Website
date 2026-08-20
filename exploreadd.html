@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* My Journey */
+.journey {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.journey::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #0d6efd;
+  transform: translateX(-50%);
+}
+
+.journey-item {
+  position: relative;
+  width: 50%;
+  padding: 15px 40px;
+}
+
+.journey-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.journey-item:nth-child(even) {
+  left: 50%;
+}
+
+.journey-dot {
+  position: absolute;
+  top: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111827;
+  border: 3px solid #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.journey-item:nth-child(odd) .journey-dot {
+  right: -22px;
+}
+
+.journey-item:nth-child(even) .journey-dot {
+  left: -22px;
+}
+
+.journey-card {
+  background: #111827;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #263244;
+  transition: 0.3s;
+}
+
+.journey-card:hover {
+  transform: translateY(-6px);
+  border-color: #0d6efd;
+  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.2);
+}
+
+.journey-year {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.journey-card h4 {
+  margin-top: 8px;
+}
+
+.journey-card p {
+  margin-bottom: 0;
+  color: #cfd8e3;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .journey::before {
+    left: 20px;
+  }
+
+  .journey-item,
+  .journey-item:nth-child(even),
+  .journey-item:nth-child(odd) {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 10px;
+  }
+
+  .journey-item:nth-child(odd) .journey-dot,
+  .journey-item:nth-child(even) .journey-dot {
+    left: -2px;
+    right: auto;
+  }
+
+}
+</style>
+<body style="background-color: #0f172a;">
+    <!-- My Journey Section -->
+<section id="journey" class="py-5">
+  <div class="container">
+
+    <h2 style="color: #0d6efd;" class="text-center text-primary mb-5">
+      My Journey
+    </h2>
+
+    <div class="journey">
+
+      <!-- 2024 -->
+      <div class="journey-item">
+        <div class="journey-dot">🎓</div>
+        <div class="journey-card">
+          <span class="journey-year">2024</span>
+          <h4>Started Diploma</h4>
+          <p>
+            Started my Diploma in Computer Engineering and began my
+            journey into the world of technology.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="journey-item">
+        <div class="journey-dot">💻</div>
+        <div class="journey-card">
+          <span class="journey-year">2025</span>
+          <h4>Started Building Projects</h4>
+          <p>
+            Started developing programming and web development projects
+            while improving my problem-solving skills.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2026 Web Development -->
+      <div class="journey-item">
+        <div class="journey-dot">🌐</div>
+        <div class="journey-card">
+          <span class="journey-year">2026</span>
+          <h4>Web Development</h4>
+          <p>
+            Worked with HTML, CSS, JavaScript and Bootstrap while
+            building responsive websites and projects.
+          </p>
+        </div>
+      </div>
+
+      <!-- Internship -->
+      <div class="journey-item">
+        <div class="journey-dot">🏢</div>
+        <div class="journey-card">
+          <span class="journey-year">2026</span>
+          <h4>Full Stack Internship</h4>
+          <p>
+            Started gaining practical exposure through a Full Stack
+            Development internship.
+          </p>
+        </div>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="journey-item">
+        <div class="journey-dot">🚀</div>
+        <div class="journey-card">
+          <span class="journey-year">2026</span>
+          <h4>Built My Portfolio</h4>
+          <p>
+            Created my personal portfolio to showcase my skills,
+            projects, certificates and development journey.
+          </p>
+        </div>
+      </div>
+
+      <!-- Future -->
+      <div class="journey-item">
+        <div class="journey-dot">🎯</div>
+        <div class="journey-card">
+          <span class="journey-year">2027</span>
+          <h4>Next Goal</h4>
+          <p>
+            Complete my Diploma and continue growing as a Full Stack
+            Developer by building real-world projects.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>
