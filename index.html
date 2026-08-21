@@ -680,6 +680,17 @@
     overflow-y: auto;
   }
 }
+    /* Scroll Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
   </style>
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -2029,6 +2040,25 @@
     defer
     type="text/javascript"
   ></script>
+
+
+
+<script>
+const revealElements = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+    revealElements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+
+        if (position < window.innerHeight - 100) {
+            element.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
 
 </body>
 </html>
